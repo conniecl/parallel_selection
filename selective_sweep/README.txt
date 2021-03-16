@@ -4,3 +4,4 @@ perl map2info.pl $chr.par
 perl 500k_haploview.pl $chr par
 java -jar -Xmx50g /public/home/lchen/software/haplowiew/Haploview.jar -memory 51200 -n -pedfile $chr.par_haploview.ped -info $chr.par_haploview.info -log $chr.par.log -minMAF 0.05 -hwcutoff 0 -missingCutoff 0.5 -dprime -out ./$chr.par
 perl gain_lsf.pl par
+/public/home/lchen/software/XPCLR/bin/XPCLR -xpclr chr$i.amp.geno chr$i.par.geno1 chr$i.snp chr$i.1k -w1 0.005 100 1000 $i -p0 0.7 ##$i=1,2,3,4..10
