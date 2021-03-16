@@ -1,4 +1,4 @@
-##Selective sweep finding
+## Selective sweep finding
 ```bash
 python ~/software/anaconda2/bin/CrossMap.py bed AGPv2_to_AGPv4.chain.gz TEO_B73_linkagemap.v2 TEO_B73_linkagemap.v4
 /public/home/lchen/software/vcftools-0.1.16/bin/vcftools --gzvcf /public/home/lchen/zeamap/01.data/final_vcf/merge_${chr}_filter.vcf.gz --keep ./par --out ./merge_$chr.par --recode --recode-INFO-all ## $chr=1,2,3...10
@@ -21,7 +21,7 @@ cut -f 1,2,3 par_overlap.bed >par_overlap.region
 perl merge_10k.pl 5
 ~/software/bedtools2/bin/bedtools intersect -wa -wb -a ~/ref/Zea_mays.AGPv4.36.gene -b par_overlap.50k.merge.bed >par_overlap.50k.merge.gene
 ```
-##KEGG enrichment analysis
+## KEGG enrichment analysis
 ```bash
 perl ko_anno.pl
 perl rand_gene.pl 1929
